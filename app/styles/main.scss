@@ -1,0 +1,395 @@
+// bower:scss
+// endbower
+
+body {
+    background: #fafafa;
+    margin: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.audio {
+    text-align: center;
+    margin: 0px auto;
+}
+
+.button {
+    cursor: hand;
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(89,89,89,1) 100%); 
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    font-family: helvetica;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+    margin: 0px auto;
+}
+
+.insertcoins {
+    margin: 0px auto;
+    background-size:100%;
+    background-size: cover; 
+    background-image: url("../images/xmen.jpg");
+    width: 793px; 
+    height: 444px;
+}
+
+.startgame {
+    text-align: center;
+}
+
+.container {
+    height: 650px;
+    background: #027bce;
+}
+
+.battleground {
+    display: none;
+    margin: 0px auto;
+    height: 500px;
+    width : 1000px;
+    background: #027bce;
+
+    &.active {
+        display: block;
+    }
+}
+
+.gametitle {
+    margin: 0px auto;
+    text-align: center;
+    font-family: Helvetica;
+    height: 100px;
+    width: 500px;
+    line-height: 100px;
+    font-size: 38px;
+    background: #cacaca;
+}
+
+.player1 {
+    float: left;
+    width: 380px; 
+    background: #cacaca;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.player2 {
+    float: right;
+    width: 380px; 
+    background: #cacaca;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.p1-playername {
+    width: 200px;
+    height: 30px;
+    background: #ACADAD;
+    text-align: center;
+    font-family: Helvetica;
+    line-height: 30px;
+    color: #000000;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+.p2-playername {
+    width: 200px;
+    height: 30px;
+    background: #ACADAD;
+    text-align: center;
+    font-family: Helvetica;
+    line-height: 30px;
+    color: #000000;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+.playerimage1 {
+    margin: 0px auto;
+    background-size:100%;
+    background-size: cover; 
+    background-image: url("../images/wolverine.jpg");
+    width: 200px; 
+    height: 200px;
+    border-radius: 7px; 
+}
+
+.playerimage2 {
+    margin: 0px auto;
+    background-size:100%;
+    background-size: cover; 
+    background-image: url("../images/magneto.jpg");
+    width: 200px; 
+    height: 200px;
+    border-radius: 7px; 
+}
+
+.playerimage2-pow {
+    margin: 0px auto;
+    background-size:100%;
+    background-size: cover; 
+    background-image: url("../images/player2-pow.jpg");
+    width: 200px; 
+    height: 200px;
+    border-radius: 7px; 
+}
+
+.p1-playerhealth {
+    height: 30px;
+    background: #ACADAD;
+    text-align: center;
+    font-family: Helvetica;
+    line-height: 30px;
+    color: #000000;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+.p2-playerhealth {
+    height: 30px;
+    background: #ACADAD;
+    text-align: center;
+    font-family: Helvetica;
+    line-height: 30px;
+    color: #000000;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+.buttons {
+    margin-left: 6px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.p1-punch-button {
+    display: inline-block;
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(89,89,89,1) 100%); 
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    font-family: helvetica;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+
+    &:active { 
+    -webkit-filter: brightness(80%); 
+    -moz-filter: brightness(80%);
+    -o-filter: brightness(80%);
+    filter: brightness(80%);
+    }   
+
+    &:hover {
+    -webkit-filter: brightness(120%); 
+    -moz-filter: brightness(120%);
+    -o-filter: brightness(120%);
+    filter: brightness(120%);
+    }
+}
+
+.p1-life-button {
+    display: inline-block;
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(89,89,89,1) 100%); 
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    font-family: helvetica;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+}
+
+.p1-kick-button {
+    display: inline-block;
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(89,89,89,1) 100%); 
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    font-family: helvetica;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+
+    &:hover {
+    -webkit-filter: brightness(120%); 
+    -moz-filter: brightness(120%);
+    -o-filter: brightness(120%);
+    filter: brightness(120%);
+    }
+
+    &:active {
+    -webkit-filter: brightness(80%); 
+    -moz-filter: brightness(80%);
+    -o-filter: brightness(80%);
+    filter: brightness(80%);
+    }
+}
+
+.p1-special-button {
+    display: inline-block;
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(89,89,89,1) 100%); 
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    font-family: helvetica;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+
+    &:active {
+    -webkit-filter: brightness(80%); 
+    -moz-filter: brightness(80%);
+    -o-filter: brightness(80%);
+    filter: brightness(80%);
+    }
+
+    &:hover {
+    -webkit-filter: brightness(120%); 
+    -moz-filter: brightness(120%);
+    -o-filter: brightness(120%);
+    filter: brightness(120%);
+    }
+}
+
+.p2-punch-button {
+    display: inline-block;
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(89,89,89,1) 100%); 
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    font-family: helvetica;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+
+    &:hover {
+    -webkit-filter: brightness(120%); 
+    -moz-filter: brightness(120%);
+    -o-filter: brightness(120%);
+    filter: brightness(120%);
+    }
+
+    &:active {
+    -webkit-filter: brightness(80%); 
+    -moz-filter: brightness(80%);
+    -o-filter: brightness(80%);
+    filter: brightness(80%);
+    }
+}
+
+.p2-kick-button {
+    display: inline-block;
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(89,89,89,1) 100%); 
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    font-family: helvetica;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+
+    &:active { 
+    -webkit-filter: brightness(80%); 
+    -moz-filter: brightness(80%);
+    -o-filter: brightness(80%);
+    filter: brightness(80%);
+    }
+
+    &:hover {
+    -webkit-filter: brightness(120%); 
+    -moz-filter: brightness(120%);
+    -o-filter: brightness(120%);
+    filter: brightness(120%);
+    }
+}
+
+.p2-special-button {
+    display: inline-block;
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(89,89,89,1) 100%); 
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    font-family: helvetica;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+
+    &:active {
+    -webkit-filter: brightness(80%); 
+    -moz-filter: brightness(80%);
+    -o-filter: brightness(80%);
+    filter: brightness(80%);
+    }
+
+    &:hover {
+    -webkit-filter: brightness(120%); 
+    -moz-filter: brightness(120%);
+    -o-filter: brightness(120%);
+    filter: brightness(120%);
+    }
+}
+
+.dead {
+    color: red;
+    font-size: 20px;
+    font-family: Helvetica;
+}
+.continue {
+    display: none;
+    margin: 0px auto;
+    text-align: center;
+    font-family: Helvetica;
+    height: 100px;
+    width: 500px;
+    line-height: 100px;
+    font-size: 38px;
+    background: #cacaca;
+
+    &.active {
+        display: block;
+    }
+}
